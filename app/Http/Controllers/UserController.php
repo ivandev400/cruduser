@@ -9,7 +9,7 @@ use App\Models\Main_user;
 class UserController extends Controller
 {
     public function index(){
-        $users = Main_user::all();
+        $users = Main_user::paginate(10);
         return view('users.index', ['users'=> $users]);
     }
     public function create(){
@@ -17,9 +17,9 @@ class UserController extends Controller
     }
     public function store(Request $request){
         $data= $request->validate([
-            'name'=> 'required',
+            'name'=> 'required|max:120',
             'email'=> 'email:rfc,dns',
-            'phone'=> 'required|string|min:8|max:11'
+            'phone'=> 'required|numeric'
         ]);
         $newUser = Main_user::create($data);
 
@@ -30,9 +30,9 @@ class UserController extends Controller
     }
     public function update(Main_user $user, Request $request){
         $data= $request->validate([
-            'name'=> 'required',
+            'name'=> 'required|max:120',
             'email'=> 'email:rfc,dns',
-            'phone'=> 'required|string|min:8|max:11'
+            'phone'=> 'required|numeric'
         ]);
         $user->update($data);
         return redirect(route('user.index'))->with('success','The user has updated successfully');

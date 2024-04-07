@@ -1,0 +1,82 @@
+body {
+    font-family: "Encode Sans Semi Expanded", sans-serif;
+}
+.container {
+    width: 560px;
+    height: 620px;
+    border-radius: 30px;
+    background-color: #ECECEC;
+    margin: 150px auto;
+}
+.header {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+}
+.name {
+    width: 374px;
+    margin: 0 auto;
+}
+.name input {
+    width: 374px;
+    height: 53px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    font-size: 24px;
+}
+.name label {
+    font-size: 16px;
+    font-weight: 250;
+}
+.email {
+    width: 374px;
+    margin: 0 auto;
+}
+.email input {
+    width: 374px;
+    height: 53px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    font-size: 24px;
+}
+.email label {
+    font-size: 16px;
+    font-weight: 250;
+}
+.phone {
+    width: 374px;
+    margin: 0 auto;
+}
+.phone input {
+    width: 374px;
+    height: 53px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    font-size: 24px;
+}
+.phone label {
+    font-size: 16px;
+    font-weight: 250;
+}
+.save-button {
+    width: 218px;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 60px auto;
+    background-color: #020202;
+}
+.save-button input {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    border-style: none;
+    background-color: #020202;
+    padding-top: 10px;
+}
+.save-button:hover {
+    cursor: pointer;
+}
+.save-button input:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,93 @@
+body {
+    width: 70vw;
+    margin: 0 auto;
+    font-family: "Encode Sans Semi Expanded", sans-serif;
+}
+h1 {
+    text-align: center;
+}
+th {
+    text-align: center;
+    height: 25px;
+    border-radius: 10px;
+    background-color: #FFD9A0;
+    font-size: 24px;
+}
+.idhead {
+    min-width: 45px;
+}
+.namehead {
+    min-width: 170px;
+}
+.emailhead {
+    min-width: 411px;
+}
+.phonehead {
+    min-width: 243px;
+}
+td {
+    height: 25px;
+    min-width: 40px;
+    border-radius: 10px;
+    border: 2px solid #FFD9A0;
+    padding: 5px 5px;
+    font-size: 24px;
+}
+.idrow {
+    background-color: #EAEAEA;
+    width: 44px;
+    height: 45px;
+    text-align: center;
+    border-style: none;
+}
+.edit-link {
+    border-style: none;
+}
+.delete-button {
+    border-style: none;
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+    background-color: #FDB446;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 24px;
+}
+.delete-button:hover {
+    cursor: pointer;
+    background-color: #FDB300;
+}
+.edit-link {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    background-color: #5061FF;
+    font-size: 24px;
+}
+.edit-link a {
+    text-decoration: none;
+    color: white;
+}
+.edit-link:hover {
+    cursor: pointer;
+    background-color: #5e6df5;
+}
+.create-user {
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #020202;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 24px;
+    margin: 10px 20px;
+}
+.create-user a {
+    text-decoration: none;
+    color: white;
+}
+.create-user:hover {
+    cursor: pointer;
+    background-color: #020202a9;
+}
