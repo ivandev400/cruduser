@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Main_user;
+use App\Models\MainUser;
 use Faker\Factory as Faker;
 
 class UserTableSeeder extends Seeder
@@ -16,8 +16,8 @@ class UserTableSeeder extends Seeder
     {
         $faker = Faker::create();
 
-        foreach (range(1,20) as $index){
-            Main_user::create([
+        for($i = 0; $i < 20; $i++){
+            MainUser::create([
                 'name' => $faker->name,
                 'email' => $faker->email,
                 'phone' => $faker->phoneNumber

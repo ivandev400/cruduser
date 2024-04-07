@@ -24,7 +24,7 @@
             </ul>
             @endif
         </div>
-        <form method="post" action="{{route('user.update', ['user'=>     $user])}}">
+        <form method="post" action="{{route('user.update', ['user'=>$user])}}">
         @csrf
         @method('put')
             <div class="name">
