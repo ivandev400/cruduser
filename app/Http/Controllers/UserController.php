@@ -9,6 +9,7 @@ use App\Models\Main_user;
 class UserController extends Controller
 {
     public function index(){
+        // почему у контроллера в ответственности обращения к базе данных?
         $users = Main_user::paginate(10);
         return view('users.index', ['users'=> $users]);
     }
@@ -16,6 +17,7 @@ class UserController extends Controller
         return view('users.create');
     }
     public function store(Request $request){
+        // за валидацию данных может отвечать кастомный реквест
         $data= $request->validate([
             'name'=> 'required|max:120',
             'email'=> 'email:rfc,dns',

@@ -11,6 +11,10 @@
     <link rel="stylesheet" type="text/css" href="{{asset('createuser.css')}}">
 </head>
 <body>
+<!--
+В целом нижняя часть является копипастой для edit.blade.php
+Можно вынести в шаблон
+-->
     <div class="container">
         <div class="header">
             <p>Create a User</p>
