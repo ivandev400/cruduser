@@ -10,14 +10,14 @@ use App\Providers\UserService;
 class UserController extends Controller
 {
     public function index(UserService $userService){
-        $users = $userService->paginateUsers();
+        $users = $userService->paginate();
         return view('users.index', ['users'=> $users]);
     }
     public function create(){
         return view('users.create');
     }
     public function store(StoreOrUpdateRequest $request, UserService $userService){
-        $userService->createUser($request);
+        $userService->create($request);
 
         return redirect(route('user.index'))->with('success','The user has saved successfully');
     }
@@ -25,7 +25,7 @@ class UserController extends Controller
         return view('users.edit', ['user'=> $user]);
     }
     public function update(MainUser $user, StoreOrUpdateRequest $request, UserService $userService){
-        $userService->updateUser($request, $user);
+        $userService->update($request, $user);
 
         return redirect(route('user.index'))->with('success','The user has updated successfully');
     }

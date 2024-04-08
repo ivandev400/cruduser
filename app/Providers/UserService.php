@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
  
 class UserService
 {
-    public function createUser(Request $request): MainUser
+    public function create(Request $request): MainUser
     {
         $user = MainUser::create([
             'name' => $request->name,
@@ -15,7 +15,7 @@ class UserService
         ]);
         return $user;
     }
-    public function updateUser(Request $request, MainUser $user)
+    public function update(Request $request, MainUser $user)
     {
         $user->update([
             'name' => $request->name,
@@ -24,7 +24,7 @@ class UserService
         ]);
         return $user;
     }
-    public function paginateUsers(){
+    public function paginate(){
         return MainUser::paginate(10);
     }
 }
